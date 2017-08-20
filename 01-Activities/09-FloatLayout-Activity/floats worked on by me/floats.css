@@ -1,0 +1,117 @@
+/**
+ * Float Layout Activity
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}  /*line-height:150%;
+  font-size: 20px;*/
+
+
+body {
+	font-size: 24px;
+	line-height: 32px; 
+	color: #333;
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #ccc;
+}
+
+section {
+	padding: 20px;
+	margin-bottom:20px;
+	background: #ccc;
+}	/*width: 100%;*/
+	/*background: #eee;*/
+	/*margin-top: 10px;*/
+	/*margin-bottom: 10px;*/
+		
+
+
+#left {
+	float: left;
+	width: calc(100% / 3);
+	color: #fff;
+	background: #666;
+}	/*padding: 10px;*/
+	
+
+
+#middle {
+	float: left;
+	width: calc(100% / 3); 
+	color: #fff;
+	background: #888;	
+}	/*padding: 10px;*/
+	
+
+
+#right {
+	background-color: #666;
+	width: calc(100% / 3);
+	float: left;
+	color:#fff;
+}	/*padding: 10px;*/
+	
+
+
+/*.clearfix1::after {
+	content: "";
+	display: block;
+	clear: both;
+	}*/
+
+
+#full {
+	width: 100%;
+	overflow: auto;
+	clear: both;
+	background: #eee;
+}	/*height: 200px;
+	*/
+	
+
+
+#division {
+	/*width: 100%;*/
+	padding: 20px;
+	margin-top: 20px;
+	background: #6ea3da;
+}
+
+aside {
+	float: left;
+	/*width: 25%;*/
+	width: 33%;
+	/*height: 130px;*/
+	height: 200px;
+	/*overflow: auto;*/
+	/*margin-left: 10px;*/
+	padding: 20px;
+	margin-left: 30px;
+	background: #fff;
+	/*padding: 10px;*/
+	border: 1px solid #eee;
+}
+
+
+
+footer {
+	padding: 20px;
+	clear: both;
+	background: #ccc;
+}	/*width: 100%;*/
+	
+	
+
+
+/*.clearfix2::after {
+	content: "";
+	display: block;
+	clear: both;
+	}*/
