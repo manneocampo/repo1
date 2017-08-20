@@ -1,0 +1,63 @@
+/** 
+First external CSS StyleSheet
+**/
+body {
+	background-color: #efeee7;
+	font-family: Georgia,"Times New Roman", Times, Serif;
+	color:#333333;
+	font-size: 18px
+	line-height: 150%;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333333;
+}
+
+h1{
+	color: #eee;
+	font-size: 28px;
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+a {
+	color: #d21034;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#main-bio,
+#contact-info,
+#bio-image {
+	float: left;
+}
+
+#main-bio {
+	width: 70%;
+} 
+
+.tab {
+	margin-left 2.5em
+}
+
+#bio-image {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	margin-bottom: 200px;
+}
+
+#contact-info {
+	width: 30%;
+}
