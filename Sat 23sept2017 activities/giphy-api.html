@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Giphy API</title>
+</head>
+<body>
+	<input id="textToSearch" type="text" placeholder="Search!!!!"/>
+	<button id="search">Search</button>
+	<div id="gif"></div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$('#search').on('click', function(e){
+	// e.preventDefault();
+	var type = $('#textToSearch').val();
+	
+
+	
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=dc6zaTOxFJmzC";
+
+	 $.ajax({
+      url: queryURL,
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+      randomIndex= Math.floor(Math.random()* response.data.length)
+     var imagesource = response.data[randomIndex].images.downsized_medium.url;
+     // var newSource = imagesource.split('?')[0];
+     console.log(imagesource);
+     $("#gif").html("<img src='" + imagesource + "'/>")
+
+    });
+    })
+</script>
+</body>
+</html>
